@@ -37,6 +37,7 @@ class LinkedList {
         const head = this.#head;
         this.#head = newNode;
         newNode.next = head;
+        head.prev = newNode;
         this.#size = this.#size + 1;
     }
 
@@ -87,6 +88,7 @@ class LinkedList {
         if (this.#size == 0) return undefined;
         const head = this.#head;
         this.#head = head.next;
+        this.#head.prev = null;
         this.#size = this.#size - 1;
         return head.getValue();
     }
@@ -130,7 +132,7 @@ class LinkedList {
         let head = this.#head;
         let res = "";
         for (let i = 0; i < this.#size; i++) {
-            res = res + `( ${head.getValue()} ) -> `
+            res = res + `( ${head.getValue()} p=${head.prev ? head.prev.getValue():"null"} ) -> `
             head = head.next;
         }
         res = res + "( null )";
