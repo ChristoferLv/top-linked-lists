@@ -1,61 +1,59 @@
 # Linked Lists
 
-Projeto de estrutura de dados desenvolvido como parte da trilha JavaScript do [The Odin Project](https://www.theodinproject.com/lessons/javascript-linked-lists), com foco em implementacao de listas encadeadas e operacoes de manipulacao de nos.
+Data structure project developed as part of the JavaScript path of [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript), focused on implementing linked lists and node manipulation operations.
 
-## Objetivo do Projeto
+## Project Objective
 
-O objetivo principal foi praticar:
-- Modelagem de uma estrutura de dados personalizada em JavaScript
-- Encadeamento de nos com referencias `next` e `prev`
-- Operacoes classicas de listas encadeadas (insercao, leitura e busca)
-- Encapsulamento com campos privados e metodos da classe
+The main objective was to practice:
+- Modeling a custom data structure in JavaScript
+- Linking nodes with `next` and `prev` references
+- Classic linked list operations (insertion, reading, and searching)
+- Encapsulation with private fields and class methods
 
-## O que e?
+## What is it?
 
-Uma implementacao de `LinkedList` em JavaScript (estilo doubly linked list) com metodos para:
-- Inserir elementos no inicio e no fim
-- Consultar tamanho, cabeça e cauda
-- Acessar valores por índice
-- Remover elemento do inicio
-- Verificar existencia de valor
-- Encontrar índice por valor
-- Gerar representacao em string da lista
+An implementation of `LinkedList` in JavaScript (doubly linked list style) with methods to:
+- Insert elements at the beginning and end
+- Check size, head, and tail
+- Access values by index
+- Remove the first element
+- Check whether a value exists
+- Find the index of a value
+- Generate a string representation of the list
 
-A classe usa um factory para criar os nos e um arquivo separado para demonstracao de uso via `console.log`.
+The class uses a factory to create nodes and a separate file to demonstrate usage via `console.log`.
 
-## Como usar
+## How to use
 
-1. Entre na pasta do projeto:
-   `cd Javascript/top-linked-lists`
-2. Execute o arquivo de demonstracao em um ambiente com suporte a ES Modules:
+1. Enter the project folder:
+   `Javascript/top-linked-lists`
+2. Run the demo file in an environment with ES Modules support:
    `node index.js`
 
-## Funcionalidades
+## Features
 
-- **`append(value)`**: adiciona um novo valor ao final da lista
-- **`prepend(value)`**: adiciona um novo valor no início da lista
-- **`size()`**: retorna a quantidade atual de elementos
-- **`head()`**: retorna o valor do primeiro elemento
-- **`tail()`**: retorna o valor do último elemento
-- **`at(index)`**: retorna o valor da posição informada
-- **`pop()`**: remove e retorna o valor do primeiro elemento
-- **`contains(value)`**: verifica se um valor existe na lista
-- **`findIndex(value)`**: retorna o índice do valor ou `-1` se não encontrado
-- **`toString()`**: retorna a lista formatada para leitura
+- **`append(value)`**: adds a new value to the end of the list
+- **`prepend(value)`**: adds a new value to the beginning of the list
+- **`size()`**: returns the current number of elements
+- **`head()`**: returns the value of the first element
+- **`tail()`**: returns the value of the last element
+- **`at(index)`**: returns the value at the requested position
+- **`pop()`**: removes and returns the first element's value
+- **`contains(value)`**: checks whether a value exists in the list
+- **`findIndex(value)`**: returns the index of the value or `-1` if not found
+- **`toString()`**: returns a formatted string representation of the list
 
-## Estrutura de Arquivos
+## File Structure
 
-- `LinkedList.js`: implementacao da classe `LinkedList` e do factory de nos
-- `index.js`: script de demonstracao das operacoes da lista
+- `LinkedList.js`: implementation of the `LinkedList` class and node factory
+- `index.js`: demo script for list operations
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - JavaScript (ES Modules)
 
 ---
 
-*Nota: a proposta pede uma linked list simples, mas optei por implementar no estilo doubly linked list.*
+Project developed following: [The Odin Project - Linked Lists](https://www.theodinproject.com/lessons/javascript-linked-lists)
 
-Projeto desenvolvido seguindo: [The Odin Project - Linked Lists](https://www.theodinproject.com/lessons/javascript-linked-lists)
-
-📍 **Repositorio principal com todos os projetos**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
+📍 **Main repository with all projects**: [ChristoferLv/TheOdinProject](https://github.com/ChristoferLv/TheOdinProject)
